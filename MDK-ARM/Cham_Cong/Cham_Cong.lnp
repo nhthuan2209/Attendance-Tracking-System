@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"cham_cong\startup_stm32f103xb.o"
+"cham_cong\fonts.o"
+"cham_cong\rc522.o"
+"cham_cong\st7789.o"
+"cham_cong\main.o"
+"cham_cong\stm32f1xx_it.o"
+"cham_cong\stm32f1xx_hal_msp.o"
+"cham_cong\stm32f1xx_hal_gpio_ex.o"
+"cham_cong\stm32f1xx_hal_rtc.o"
+"cham_cong\stm32f1xx_hal_rtc_ex.o"
+"cham_cong\stm32f1xx_hal.o"
+"cham_cong\stm32f1xx_hal_rcc.o"
+"cham_cong\stm32f1xx_hal_rcc_ex.o"
+"cham_cong\stm32f1xx_hal_gpio.o"
+"cham_cong\stm32f1xx_hal_dma.o"
+"cham_cong\stm32f1xx_hal_cortex.o"
+"cham_cong\stm32f1xx_hal_pwr.o"
+"cham_cong\stm32f1xx_hal_flash.o"
+"cham_cong\stm32f1xx_hal_flash_ex.o"
+"cham_cong\stm32f1xx_hal_exti.o"
+"cham_cong\stm32f1xx_hal_spi.o"
+"cham_cong\system_stm32f1xx.o"
+--strict --scatter "Cham_Cong\Cham_Cong.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Cham_Cong.map" -o Cham_Cong\Cham_Cong.axf
